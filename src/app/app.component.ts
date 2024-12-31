@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core'
 import { IceCreamComponent } from './ice-cream/ice-cream.component'
+import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'app-root',
-  imports: [IceCreamComponent],
+  imports: [IceCreamComponent, FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
