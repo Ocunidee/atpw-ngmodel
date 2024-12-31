@@ -1,0 +1,33 @@
+<div id="icecream-store">
+  <h1>Icecream store</h1>
+
+  <form>
+    <label>Quantity: <input name="quantity" type="number"/></label>
+
+    <label>Size:
+      <select name="size">
+        <option value="100">Small</option>
+        <option value="150">Medium</option>
+        <option value="200">Giant</option>
+      </select>
+    </label>
+
+    <fieldset>
+      <legend>Flavour:</legend>
+      <label><input type="radio" name="flavour" value="#F3E5AB" />Vanilla</label>
+      <label><input type="radio" name="flavour" value="#5B2F00" />Chocolate</label>
+      <label><input type="radio" name="flavour" value="#DE0934" />Strawberry</label>
+    </fieldset>
+
+    <label><input type="checkbox" name="napkin"/> Napkin</label>
+  </form>
+
+  <app-ice-cream
+    [quantity]="quantity"
+    [flavour]="flavour"
+    [size]="size"
+    [napkin]="napkin"
+  ></app-ice-cream>
+</div>
+
+<!-- Using the ngModel directive, link the 4 variables in the AppComponent class to the various inputs and select tag present here -->
