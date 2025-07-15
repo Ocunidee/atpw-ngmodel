@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, model } from '@angular/core'
 import { IceCreamComponent } from './ice-cream/ice-cream.component'
 
 @Component({
@@ -8,8 +8,8 @@ import { IceCreamComponent } from './ice-cream/ice-cream.component'
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  quantity = 1
-  flavour = '#5B2F00'
-  size = 150
-  napkin = true
+  quantity = model(1)
+  flavour = model('#5B2F00')
+  size = model(150)
+  napkin = model(true)
 }
